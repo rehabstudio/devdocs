@@ -1,0 +1,215 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Welcome to nacelle’s documentation! &mdash; devdocs 1.0 documentation</title>
+  
+
+  
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="top" title="devdocs 1.0 documentation" href="index.html"/> 
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        
+          <a href="index.html" class="fa fa-home"> devdocs</a>
+        
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        
+        
+            <!-- Local TOC -->
+            <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Welcome to nacelle&#8217;s documentation!</a><ul>
+<li><a class="reference internal" href="#standing-on-the-shoulders-of-giants">Standing on the shoulders of giants</a></li>
+<li><a class="reference internal" href="#contents">Contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">devdocs</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+    <li>Welcome to nacelle&#8217;s documentation!</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          <a href="_sources/second.txt" rel="nofollow"> View page source</a>
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document">
+            
+  <div class="section" id="welcome-to-nacelle-s-documentation">
+<h1>Welcome to nacelle&#8217;s documentation!<a class="headerlink" href="#welcome-to-nacelle-s-documentation" title="Permalink to this headline">¶</a></h1>
+<a class="reference external image-reference" href="https://travis-ci.org/nacelle/nacelle"><img alt="https://travis-ci.org/nacelle/nacelle.png?branch=master" src="https://travis-ci.org/nacelle/nacelle.png?branch=master" /></a>
+<a class="reference external image-reference" href="https://coveralls.io/r/rehabstudio/nacelle"><img alt="https://coveralls.io/repos/rehabstudio/nacelle/badge.png" src="https://coveralls.io/repos/rehabstudio/nacelle/badge.png" /></a>
+<a class="reference external image-reference" href="http://badge.fury.io/py/nacelle"><img alt="https://badge.fury.io/py/nacelle.png" src="https://badge.fury.io/py/nacelle.png" /></a>
+<p>nacelle is a lightweight Python web framework, built on top of webapp2,
+designed for use on Google Appengine.</p>
+<p>nacelle aims to provide a small but solid set of tools that enable developers
+to quickly get a new app up and running, whilst not sacrificing any of the
+flexibility and power of webapp2 in the process. Nacelle is suitable for
+building everything from tiny prototypes to large complex applications, it
+should never get in your way.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">If you need portability from appengine then nacelle probably isn&#8217;t for you,
+use Django, Flask or one of the many other awesome Python web frameworks
+that exist, you&#8217;ll thank me later.</p>
+</div>
+<p>nacelle is Free Software, released under the <a class="reference external" href="http://opensource.org/licenses/MIT">MIT license</a>.</p>
+<div class="section" id="standing-on-the-shoulders-of-giants">
+<h2>Standing on the shoulders of giants<a class="headerlink" href="#standing-on-the-shoulders-of-giants" title="Permalink to this headline">¶</a></h2>
+<p>nacelle wouldn&#8217;t be possible without the hard work of others and the fantastic
+libraries upon which it builds. <strong>If you have a problem with nacelle, and you
+can&#8217;t find the answer in these docs, you should try the documentation of
+nacelle&#8217;s components</strong> by following the links below.</p>
+<ul>
+<li><dl class="first docutils">
+<dt><a class="reference external" href="https://webapp-improved.appspot.com">webapp2</a>:</dt>
+<dd><p class="first last">A lightweight Python web framework compatible with Google Appengine’s
+webapp. webapp2 is the main foundation for most of nacelle&#8217;s WSGI/web
+functionality.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt><a class="reference external" href="http://jinja.pocoo.org/docs/">Jinja2</a>:</dt>
+<dd><p class="first last">A modern and designer friendly templating language for Python, modelled
+after Django’s templates. nacelle includes a preconfigured Jinja2
+environment ready for you to use.</p>
+</dd>
+</dl>
+</li>
+</ul>
+<p>This documentation won&#8217;t try to cover absolutely everything, instead it aims
+to cover only those bits of nacelle that differ significantly from webapp2,
+pointing back to the original webapp2 docs where appropriate.</p>
+</div>
+<div class="section" id="contents">
+<h2>Contents<a class="headerlink" href="#contents" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="index.html">Welcome to devdocs&#8217;s documentation!</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#indices-and-tables">Indices and tables</a></li>
+</ul>
+</div>
+</div>
+</div>
+
+
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2014, rehabstudio.
+    </p>
+  </div>
+
+  <a href="https://github.com/snide/sphinx_rtd_theme">Sphinx theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'1.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

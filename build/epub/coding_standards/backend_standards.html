@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Backend Standards</title>
+    
+    <link rel="stylesheet" href="../_static/epub.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" /> 
+  </head>
+  <body>
+
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../image_formats.html" title="Image Formats"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="frontend_standards.html" title="Frontend Standards"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../index.html">devdocs 1.0 documentation</a> &raquo;</li>
+          <li><a href="index.html" accesskey="U">Coding Standards</a> &raquo;</li> 
+      </ul>
+    </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body">
+            
+  <div class="section" id="backend-standards">
+<h1>Backend Standards</h1>
+<div class="toctree-wrapper compound">
+</div>
+<div class="section" id="php">
+<h2>PHP</h2>
+<div class="section" id="existing-standards-and-code-sniffer">
+<h3>Existing Standards and Code Sniffer</h3>
+<p>Thankfully, there are already agreed PHP community coding standards, and rehabstudio adopts these.</p>
+<p>When coding in CakePHP, please use the CakePHP coding standard, which is available for CodeSniffer, this makes it super simple to integrate into your Grunt/Gulp setup.</p>
+<ul class="simple">
+<li><a class="reference external" href="http://book.cakephp.org/2.0/en/contributing/cakephp-coding-conventions.html">http://book.cakephp.org/2.0/en/contributing/cakephp-coding-conventions.html</a></li>
+<li><a class="reference external" href="https://github.com/cakephp/cakephp-codesniffer">https://github.com/cakephp/cakephp-codesniffer</a></li>
+</ul>
+<p>Should you be working with any other framework, it is acceptable to use PSR2 or PSR1, but you must use one of these 3 standards!</p>
+</div>
+<div class="section" id="supplimentary">
+<h3>Supplimentary</h3>
+<p>Furthermore, please observe the following:</p>
+<ul class="simple">
+<li>File encoding is UTF-8</li>
+<li>The default permissions for folders are octal 0755, for files octal 0644. Only if the file must be executable (i.e. from console) use octal 0744 for files.</li>
+<li>Never do a SELECT * unless you really need every field return, SELECT * queries have a massive overhead. (This also applies to &#8220;find all&#8221; commands within frameworks).</li>
+</ul>
+</div>
+</div>
+<div class="section" id="python">
+<h2>Python</h2>
+<p>Where applicable (in most cases), please adhere to the PEP 8 style guide.  The PEP 8 guide itself advises when it is acceptable to disregard this.</p>
+</div>
+</div>
+
+
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+
+    <div class="footer">
+        &copy; Copyright 2014, rehabstudio.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.2.
+    </div>
+  </body>
+</html>

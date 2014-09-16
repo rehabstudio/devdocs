@@ -1,0 +1,130 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Performance Plan</title>
+    
+    <link rel="stylesheet" href="_static/epub.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" /> 
+  </head>
+  <body>
+
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="resources.html" title="Resources"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="peer_reviews.html" title="Peer Reviews"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">devdocs 1.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body">
+            
+  <div class="section" id="performance-plan">
+<h1>Performance Plan</h1>
+<div class="toctree-wrapper compound">
+</div>
+<div class="section" id="responsibilities">
+<h2>Responsibilities</h2>
+<p>Granular detail of the responsibilities at each stage of build.</p>
+</div>
+<div class="section" id="strategy">
+<h2>Strategy</h2>
+<ul class="simple">
+<li><em>Source data on target market - mobile, OS, average broadband</em></li>
+</ul>
+</div>
+<div class="section" id="design">
+<h2>Design</h2>
+<ul class="simple">
+<li>Design appropriately for the target market</li>
+<li>Design appropriately for the target devices, e.g. performance restrictions on phone/tablet</li>
+<li>Export images in the appropriate format, optimised for balance of quality and file size</li>
+</ul>
+</div>
+<div class="section" id="production">
+<h2>Production</h2>
+<ul class="simple">
+<li>Set a performance budget with devs and enforce the budget on change request</li>
+</ul>
+</div>
+<div class="section" id="dev-ops">
+<h2>Dev Ops</h2>
+<ul class="simple">
+<li>Use Page Speed module for compression, caching, expires headers</li>
+<li>Enable appropriate number of CDNs/distribution points</li>
+<li>Site should scale appropriately where needs be and have sufficient server specifications to support the core platforms tasks</li>
+<li>Server should be located in the optimum locale for the target market</li>
+<li>Server should be running the minimum services required to run the application</li>
+<li>Implement Sitespeed.io (or similar) into deploy script</li>
+</ul>
+</div>
+<div class="section" id="back-end">
+<h2>Back-end</h2>
+<ul class="simple">
+<li>Render HTML templates</li>
+<li>Cache assets, db queries and opcode where appropriate</li>
+<li>Optimise code, ensuring the likes of loops and file i/o are as efficient as possible</li>
+<li>Compress images upon upload where possible, according to the nature of the project</li>
+</ul>
+</div>
+<div class="section" id="front-end">
+<h2>Front-end</h2>
+<ul class="simple">
+<li>Use progressive enhancement</li>
+<li>Optimise code, ensuring the likes of loops are as efficient as possible</li>
+<li>Optimise (minify, concatenate, compress) assets (css, js, img, svg) in workflow</li>
+<li>Ensure that assets are only loaded when required; use lazy or conditional loading</li>
+<li>Log timestamps of key moments for measurement</li>
+<li>Enforce the performance budget</li>
+</ul>
+</div>
+<div class="section" id="qa">
+<h2>QA</h2>
+<ul class="simple">
+<li>Use Page Speed Insights (or similar) and developer tools to flag slow page load problems<sup>1</sup></li>
+<li>Visually inspection for-over optimisation of SVG</li>
+<li>Run selenium grid across main 4 desktop browsers<sup>2</sup></li>
+<li>Automated testing across supported devices, including bandwidth throttling<sup>3</sup></li>
+<li>Enforce performance budget</li>
+<li>Ensure no double redirects (particularly where specific mobile content is present)</li>
+<li>Measure performance of external asset servers</li>
+<li>Check that relevant assets are benefiting from server side compression<sup>4</sup></li>
+</ul>
+</div>
+<div class="section" id="notes">
+<h2>Notes</h2>
+<ol class="arabic simple">
+<li>Analyse what specific elements are causing issue and ensure that optimisations suggested above have been applied.</li>
+<li>Use our own tool and check for any spinning slow page loads (general check but focus on anything identified in page speed insights analysis).  Acceptable limits for animated sites are 10 seconds for primary non-cached first page load and no more than 4 seconds for cached page load.  Any exceeding of these numbers needs accounted for. Load times for sites with no animation should be no more than 5 and 2 sec respectively. If no CMS present then lower again. Any exceptions need explained. Page load time is that returned by browser developer tools. Performance test runs should be performed against staging site which should be comparable cpu to the live site. A subsequent run is required if CDNs are to be enabled for go live. (up to 1 day required for propagation)</li>
+<li>If it is agreed with customer that users are accessing apps over slower connections but this is an exception to standard QA testing</li>
+<li>Developer responsibility but needs checked by QA.</li>
+</ol>
+</div>
+</div>
+
+
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+
+    <div class="footer">
+        &copy; Copyright 2014, rehabstudio.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.2.
+    </div>
+  </body>
+</html>

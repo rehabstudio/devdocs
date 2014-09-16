@@ -1,0 +1,286 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Performance Plan &mdash; devdocs 1.0 documentation</title>
+  
+
+  
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="top" title="devdocs 1.0 documentation" href="index.html"/>
+        <link rel="next" title="Resources" href="resources.html"/>
+        <link rel="prev" title="Peer Reviews" href="peer_reviews.html"/> 
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        
+          <a href="index.html" class="fa fa-home"> devdocs</a>
+        
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        
+        
+            <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="coding_standards/index.html">Coding Standards</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="coding_standards/frontend_standards.html">Frontend Standards</a></li>
+<li class="toctree-l2"><a class="reference internal" href="coding_standards/backend_standards.html">Backend Standards</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="image_formats.html">Image Formats</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="image_formats.html#jpeg">JPEG</a></li>
+<li class="toctree-l2"><a class="reference internal" href="image_formats.html#png">PNG</a></li>
+<li class="toctree-l2"><a class="reference internal" href="image_formats.html#svg">SVG</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="prelaunch_checklist.html">Prelaunch Checklist</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="prelaunch_checklist.html#front-end">Front End</a></li>
+<li class="toctree-l2"><a class="reference internal" href="prelaunch_checklist.html#back-end-platform">Back End / Platform</a></li>
+<li class="toctree-l2"><a class="reference internal" href="prelaunch_checklist.html#sysadmin">Sysadmin</a></li>
+<li class="toctree-l2"><a class="reference internal" href="prelaunch_checklist.html#post-launch">Post Launch</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="peer_reviews.html">Peer Reviews</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="peer_reviews.html#resources">Resources</a></li>
+<li class="toctree-l2"><a class="reference internal" href="peer_reviews.html#proposed-process">Proposed Process</a></li>
+<li class="toctree-l2"><a class="reference internal" href="peer_reviews.html#questions">Questions</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="">Performance Plan</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#responsibilities">Responsibilities</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#strategy">Strategy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#design">Design</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#production">Production</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#dev-ops">Dev Ops</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#back-end">Back-end</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#front-end">Front-end</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#qa">QA</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#notes">Notes</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="resources.html">Resources</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="resources.html#rehabstudio-resources">rehabstudio Resources</a></li>
+<li class="toctree-l2"><a class="reference internal" href="resources.html#educational-resources">Educational Resources</a></li>
+</ul>
+</li>
+</ul>
+
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">devdocs</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+    <li>Performance Plan</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          <a href="_sources/performance_plan.txt" rel="nofollow"> View page source</a>
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document">
+            
+  <div class="section" id="performance-plan">
+<h1>Performance Plan<a class="headerlink" href="#performance-plan" title="Permalink to this headline">¶</a></h1>
+<div class="toctree-wrapper compound">
+</div>
+<div class="section" id="responsibilities">
+<h2>Responsibilities<a class="headerlink" href="#responsibilities" title="Permalink to this headline">¶</a></h2>
+<p>Granular detail of the responsibilities at each stage of build.</p>
+</div>
+<div class="section" id="strategy">
+<h2>Strategy<a class="headerlink" href="#strategy" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><em>Source data on target market - mobile, OS, average broadband</em></li>
+</ul>
+</div>
+<div class="section" id="design">
+<h2>Design<a class="headerlink" href="#design" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Design appropriately for the target market</li>
+<li>Design appropriately for the target devices, e.g. performance restrictions on phone/tablet</li>
+<li>Export images in the appropriate format, optimised for balance of quality and file size</li>
+</ul>
+</div>
+<div class="section" id="production">
+<h2>Production<a class="headerlink" href="#production" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Set a performance budget with devs and enforce the budget on change request</li>
+</ul>
+</div>
+<div class="section" id="dev-ops">
+<h2>Dev Ops<a class="headerlink" href="#dev-ops" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Use Page Speed module for compression, caching, expires headers</li>
+<li>Enable appropriate number of CDNs/distribution points</li>
+<li>Site should scale appropriately where needs be and have sufficient server specifications to support the core platforms tasks</li>
+<li>Server should be located in the optimum locale for the target market</li>
+<li>Server should be running the minimum services required to run the application</li>
+<li>Implement Sitespeed.io (or similar) into deploy script</li>
+</ul>
+</div>
+<div class="section" id="back-end">
+<h2>Back-end<a class="headerlink" href="#back-end" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Render HTML templates</li>
+<li>Cache assets, db queries and opcode where appropriate</li>
+<li>Optimise code, ensuring the likes of loops and file i/o are as efficient as possible</li>
+<li>Compress images upon upload where possible, according to the nature of the project</li>
+</ul>
+</div>
+<div class="section" id="front-end">
+<h2>Front-end<a class="headerlink" href="#front-end" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Use progressive enhancement</li>
+<li>Optimise code, ensuring the likes of loops are as efficient as possible</li>
+<li>Optimise (minify, concatenate, compress) assets (css, js, img, svg) in workflow</li>
+<li>Ensure that assets are only loaded when required; use lazy or conditional loading</li>
+<li>Log timestamps of key moments for measurement</li>
+<li>Enforce the performance budget</li>
+</ul>
+</div>
+<div class="section" id="qa">
+<h2>QA<a class="headerlink" href="#qa" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Use Page Speed Insights (or similar) and developer tools to flag slow page load problems<sup>1</sup></li>
+<li>Visually inspection for-over optimisation of SVG</li>
+<li>Run selenium grid across main 4 desktop browsers<sup>2</sup></li>
+<li>Automated testing across supported devices, including bandwidth throttling<sup>3</sup></li>
+<li>Enforce performance budget</li>
+<li>Ensure no double redirects (particularly where specific mobile content is present)</li>
+<li>Measure performance of external asset servers</li>
+<li>Check that relevant assets are benefiting from server side compression<sup>4</sup></li>
+</ul>
+</div>
+<div class="section" id="notes">
+<h2>Notes<a class="headerlink" href="#notes" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li>Analyse what specific elements are causing issue and ensure that optimisations suggested above have been applied.</li>
+<li>Use our own tool and check for any spinning slow page loads (general check but focus on anything identified in page speed insights analysis).  Acceptable limits for animated sites are 10 seconds for primary non-cached first page load and no more than 4 seconds for cached page load.  Any exceeding of these numbers needs accounted for. Load times for sites with no animation should be no more than 5 and 2 sec respectively. If no CMS present then lower again. Any exceptions need explained. Page load time is that returned by browser developer tools. Performance test runs should be performed against staging site which should be comparable cpu to the live site. A subsequent run is required if CDNs are to be enabled for go live. (up to 1 day required for propagation)</li>
+<li>If it is agreed with customer that users are accessing apps over slower connections but this is an exception to standard QA testing</li>
+<li>Developer responsibility but needs checked by QA.</li>
+</ol>
+</div>
+</div>
+
+
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="resources.html" class="btn btn-neutral float-right" title="Resources">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="peer_reviews.html" class="btn btn-neutral" title="Peer Reviews"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2014, rehabstudio.
+    </p>
+  </div>
+
+  <a href="https://github.com/snide/sphinx_rtd_theme">Sphinx theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'1.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

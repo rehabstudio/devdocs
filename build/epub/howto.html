@@ -1,0 +1,417 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>How to work with reStructured Text</title>
+    
+    <link rel="stylesheet" href="_static/epub.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" /> 
+  </head>
+  <body>
+
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li><a href="index.html">devdocs 1.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body">
+            
+  <div class="section" id="how-to-work-with-restructured-text">
+<h1>How to work with reStructured Text</h1>
+</div>
+<div class="section" id="quick-overview">
+<h1>Quick Overview</h1>
+<div class="section" id="h2-heading-2-text">
+<h2>h2. Heading 2 Text</h2>
+<div class="section" id="h3-heading-3-text">
+<h3>h3. Heading 3 Text</h3>
+<div class="section" id="h4-heading-4-text">
+<h4>h4. Heading 4 Text</h4>
+<div class="section" id="h5-heading-5-text">
+<h5>h5. Heading 5 Text</h5>
+<div class="section" id="h6-heading-6-text">
+<h6>h6. Heading 6 Text</h6>
+<blockquote>
+<div><dl class="docutils">
+<dt>Indented text</dt>
+<dd>More indented</dd>
+</dl>
+</div></blockquote>
+<p>Back to standard text.</p>
+<ul class="simple">
+<li>Bullet list 1</li>
+<li>Bullet list 1</li>
+<li>Bullet list 1</li>
+</ul>
+<ol class="arabic">
+<li><dl class="first docutils">
+<dt>Numbered List 1</dt>
+<dd><ol class="first last arabic simple">
+<li>Numbered List 1</li>
+<li>Numbered List 1</li>
+<li>Numbered List 1</li>
+</ol>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Numbered List 3</dt>
+<dd><ul class="first last simple">
+<li>Bullet list 1</li>
+<li>Bullet list 1</li>
+<li>Bullet list 1</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p class="first">Numbered List 2</p>
+</li>
+</ol>
+<img alt="https://www.google.com/a/rehabstudio.com/images/logo.gif?alpha=1&amp;service=google_default" src="https://www.google.com/a/rehabstudio.com/images/logo.gif?alpha=1&amp;service=google_default" />
+<p><a class="reference external" href="http://www.rehabstudio.com/">rehabstudio</a><span class="link-target"> [http://www.rehabstudio.com/]</span></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="html-injection">
+<h1>HTML Injection</h1>
+<p>If there just <em>has</em> to be a line break here,
+<span class="raw-html"><br><strong><em>(line break demonstrating pure HTML injection)</em></strong><br></span>
+it can be accomplished with a &#8220;raw-html&#8221; role.</p>
+</div>
+<div class="section" id="body-elements">
+<h1>Body Elements</h1>
+<p>Grid table:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="48%" />
+<col width="52%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><p class="first">Paragraphs are flush-left,
+separated by blank lines.</p>
+<blockquote class="last">
+<div>Block quotes are indented.</div></blockquote>
+</td>
+<td rowspan="2"><p class="first">Literal block, preceded by &#8221;::&#8221;:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">Indented</span>
+</pre></div>
+</div>
+<p>or:</p>
+<div class="last highlight-python"><div class="highlight"><pre>&gt; Quoted
+</pre></div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><div class="first last highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="s">&#39;Doctest block&#39;</span>
+<span class="go">Doctest block</span>
+</pre></div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td colspan="2"><div class="first last line-block">
+<div class="line">Line blocks preserve line breaks &amp; indents.</div>
+<div class="line-block">
+<div class="line">Useful for addresses, verse, and adornment-free lists; long
+lines can be wrapped with continuation lines.</div>
+</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Simple tables:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="21%" />
+<col width="79%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">List Type</th>
+<th class="head">Examples (syntax in the <a class="reference external" href="./_sources/howto.txt">text source</a>)</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Bullet list</td>
+<td><ul class="first last simple">
+<li>items begin with &#8220;-&#8221;, &#8220;+&#8221;, or &#8220;*&#8221;</li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td>Enumerated list</td>
+<td><ol class="first last arabic simple">
+<li>items use any variation of &#8220;1.&#8221;, &#8220;A)&#8221;, and &#8220;(i)&#8221;</li>
+<li>also auto-enumerated</li>
+</ol>
+</td>
+</tr>
+<tr class="row-even"><td>Definition list</td>
+<td><dl class="first last docutils">
+<dt>Term is flush-left <span class="classifier-delimiter">:</span> <span class="classifier">optional classifier</span></dt>
+<dd>Definition is indented, no blank line between</dd>
+</dl>
+</td>
+</tr>
+<tr class="row-odd"><td>Field list</td>
+<td><table class="first last docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">field name:</th><td class="field-body">field body</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr class="row-even"><td>Option list</td>
+<td><table class="first last docutils option-list" frame="void" rules="none">
+<col class="option" />
+<col class="description" />
+<tbody valign="top">
+<tr><td class="option-group">
+<kbd><span class="option">-o</span></kbd></td>
+<td>at least 2 spaces between option &amp; description</td></tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="docutils">
+<colgroup>
+<col width="14%" />
+<col width="86%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Explicit Markup</th>
+<th class="head">Examples (visible in the <a class="reference external" href="./_sources/howto.txt">text source</a>)</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Footnote</td>
+<td><table class="first last docutils footnote" frame="void" id="id1" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id3">[1]</a></td><td>Manually numbered or [#] auto-numbered
+(even [#labelled]) or [*] auto-symbol</td></tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr class="row-odd"><td>Citation</td>
+<td><table class="first last docutils citation" frame="void" id="cit2002" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id4">[CIT2002]</a></td><td>A citation.</td></tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr class="row-even"><td>Define Links</td>
+<td>The following urls are defined and used in Inline Markup section below</td>
+</tr>
+<tr class="row-odd"><td>Hyperlink Target</td>
+<td></td>
+</tr>
+<tr class="row-even"><td>Anonymous Target</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td>Directive (&#8221;::&#8221;)</td>
+<td><img alt="https://www.google.com/a/rehabstudio.com/images/logo.gif?alpha=1&amp;service=google_default" class="first last" src="https://www.google.com/a/rehabstudio.com/images/logo.gif?alpha=1&amp;service=google_default" />
+</td>
+</tr>
+<tr class="row-even"><td>Substitution Def</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td>Comment</td>
+<td></td>
+</tr>
+<tr class="row-even"><td>Empty Comment</td>
+<td>(&#8221;..&#8221; on a line by itself, with blank lines before &amp; after,
+used to separate indentation contexts)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="inline-markup">
+<h1>Inline Markup</h1>
+<p><em>emphasis</em>;</p>
+<p><strong>strong emphasis</strong>;</p>
+<p><cite>interpreted text</cite>;</p>
+<p><em>interpreted text with role</em>;</p>
+<p><tt class="docutils literal"><span class="pre">inline</span> <span class="pre">literal</span> <span class="pre">text</span></tt>;</p>
+<p>standalone hyperlink, <a class="reference external" href="http://docutils.sourceforge.net">http://docutils.sourceforge.net</a>;</p>
+<p>named reference, <a class="reference external" href="http://docutils.sf.net/rst.html">reStructuredText</a><span class="link-target"> [http://docutils.sf.net/rst.html]</span>;</p>
+<p><a class="reference external" href="http://docutils.sf.net/docs/ref/rst/restructuredtext.html">anonymous reference</a><span class="link-target"> [http://docutils.sf.net/docs/ref/rst/restructuredtext.html]</span>;</p>
+<p>footnote reference, <a class="footnote-reference" href="#id1" id="id3">[1]</a>;</p>
+<p>citation reference,</p>
+<p><a class="reference internal" href="#cit2002" id="id4">[CIT2002]</a>;</p>
+<p>like an inline directive; <span class="target" id="inline-internal-target">inline internal target</span>.</p>
+</div>
+<div class="section" id="directive-quick-reference">
+<h1>Directive Quick Reference</h1>
+<p>See &lt;<a class="reference external" href="http://docutils.sf.net/docs/ref/rst/directives.html">http://docutils.sf.net/docs/ref/rst/directives.html</a>&gt; for full info.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="21%" />
+<col width="79%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Directive Name</th>
+<th class="head">Description (Docutils version added to, in [brackets])</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>attention</td>
+<td><p class="first">Specific admonition; also &#8220;caution&#8221;, &#8220;danger&#8221;,
+&#8220;error&#8221;, &#8220;hint&#8221;, &#8220;important&#8221;, &#8220;note&#8221;, &#8220;tip&#8221;, &#8220;warning&#8221;</p>
+<div class="last admonition hint">
+<p class="first admonition-title">Hint</p>
+<p class="last">A hint may look like this!</p>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td>image</td>
+<td><tt class="docutils literal"><span class="pre">..</span> <span class="pre">image::</span> <span class="pre">picture.png</span></tt>; many options possible</td>
+</tr>
+<tr class="row-even"><td>figure</td>
+<td>Like &#8220;image&#8221;, but with optional caption and legend</td>
+</tr>
+<tr class="row-odd"><td>parsed-literal</td>
+<td>A literal block with parsed inline markup</td>
+</tr>
+<tr class="row-even"><td>rubric</td>
+<td><tt class="docutils literal"><span class="pre">..</span> <span class="pre">rubric::</span> <span class="pre">Informal</span> <span class="pre">Heading</span></tt></td>
+</tr>
+<tr class="row-odd"><td>epigraph</td>
+<td>Block quote with class=&#8221;epigraph&#8221;</td>
+</tr>
+<tr class="row-even"><td>highlights</td>
+<td>Block quote with class=&#8221;highlights&#8221;</td>
+</tr>
+<tr class="row-odd"><td>pull-quote</td>
+<td>Block quote with class=&#8221;pull-quote&#8221;</td>
+</tr>
+<tr class="row-even"><td>compound</td>
+<td>Compound paragraphs [0.3.6]</td>
+</tr>
+<tr class="row-odd"><td>table</td>
+<td>Create a titled table [0.3.1]</td>
+</tr>
+<tr class="row-even"><td>list-table</td>
+<td>Create a table from a uniform two-level bullet list [0.3.8]</td>
+</tr>
+<tr class="row-odd"><td>csv-table</td>
+<td>Create a table from CSV data [0.3.4]</td>
+</tr>
+<tr class="row-even"><td>contents</td>
+<td>Generate a table of contents</td>
+</tr>
+<tr class="row-odd"><td>sectnum</td>
+<td>Automatically number sections, subsections, etc.</td>
+</tr>
+<tr class="row-even"><td>header, footer</td>
+<td>Create document decorations [0.3.8]</td>
+</tr>
+<tr class="row-odd"><td>target-notes</td>
+<td>Create an explicit footnote for each external target</td>
+</tr>
+<tr class="row-even"><td>math</td>
+<td>Mathematical notation (input in LaTeX format)</td>
+</tr>
+<tr class="row-odd"><td>include</td>
+<td>Read an external reST file as if it were inline</td>
+</tr>
+<tr class="row-even"><td>raw</td>
+<td>Non-reST data passed untouched to the Writer</td>
+</tr>
+<tr class="row-odd"><td>replace</td>
+<td>Replacement text for substitution definitions</td>
+</tr>
+<tr class="row-even"><td>unicode</td>
+<td>Unicode character code conversion for substitution defs</td>
+</tr>
+<tr class="row-odd"><td>date</td>
+<td>Generates today&#8217;s date; for substitution defs</td>
+</tr>
+<tr class="row-even"><td>class</td>
+<td>Set a &#8220;class&#8221; attribute on the next element</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="interpreted-text-role-quick-reference">
+<h1>Interpreted Text Role Quick Reference</h1>
+<p>See &lt;<a class="reference external" href="http://docutils.sf.net/docs/ref/rst/roles.html">http://docutils.sf.net/docs/ref/rst/roles.html</a>&gt; for full info.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="21%" />
+<col width="79%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Role Name</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>emphasis</td>
+<td>Equivalent to <em>emphasis</em></td>
+</tr>
+<tr class="row-odd"><td>literal</td>
+<td>Equivalent to <tt class="docutils literal"><span class="pre">literal</span></tt> but processes backslash escapes</td>
+</tr>
+<tr class="row-even"><td>math</td>
+<td>Mathematical notation (input in LaTeX format)</td>
+</tr>
+<tr class="row-odd"><td>PEP</td>
+<td>Reference to a numbered Python Enhancement Proposal</td>
+</tr>
+<tr class="row-even"><td>RFC</td>
+<td>Reference to a numbered Internet Request For Comments</td>
+</tr>
+<tr class="row-odd"><td>raw</td>
+<td>For non-reST data; cannot be used directly (see docs) [0.3.6]</td>
+</tr>
+<tr class="row-even"><td>strong</td>
+<td>Equivalent to <strong>strong</strong></td>
+</tr>
+<tr class="row-odd"><td>sub</td>
+<td>Subscript
+H<sub>2</sub>O</td>
+</tr>
+<tr class="row-even"><td>sup</td>
+<td>Superscript
+E = mc<sup>2</sup></td>
+</tr>
+<tr class="row-odd"><td>title</td>
+<td>Title reference (book, etc.); standard default role</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+
+    <div class="footer">
+        &copy; Copyright 2014, rehabstudio.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.2.
+    </div>
+  </body>
+</html>
