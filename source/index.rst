@@ -8,6 +8,7 @@ rehabstudio Developers' Documentation
    coding_standards/index
    image_formats
    prelaunch_checklist
+   deploy_standards
    peer_reviews
    performance_plan
    resources
@@ -25,7 +26,9 @@ until such time as we agree to change, based on the outcome of debates.
 Formats
 =======
 
-You can view this documentation online at http://devdocs.rehabstudio.com, as an `eBook here <./devdocs.epub>`_ or as a `PDF here <./devdocs.pdf>`_.
+You can view this documentation online at http://devdocs.rehabstudio.com
+
+You can also view this documentation as ebook_ or PDF_ formats.
 
 Your Contributions
 ==================
@@ -37,3 +40,6 @@ See GIT repo ``/projects/RS/repos/devdocs/browse``, these pages are coded in
 `reStructured Text markup <./howto.html>`_.
 
 Please build with: ``make html && make pdf && make epub``
+
+.. _ebook: https://readthedocs.org/projects/devdocs/downloads/epub/latest/
+.. _PDF: https://readthedocs.org/projects/devdocs/downloads/pdf/latest/
