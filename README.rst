@@ -40,12 +40,12 @@ development.
 5. Build your new changes to test locally::
 
     $ make html
-    
+
    Or if you prefer, run the included `watch.sh` script to continually monitor your repo for changes and rebuild as required::
 
     $ ./watch.sh
 
-6. You can run a simple HTTP server locally (probably in another terminal) to view your changes
+6. You can run a simple HTTP server locally (probably in another terminal) to view your changes::
 
     $ cd build/html && python -m SimpleHTTPServer
 
