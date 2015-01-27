@@ -88,7 +88,9 @@ HTML
 Sass
 ****
 
-- Keep all variables in a single variables file and use generic names; like classes, variables can be used in multiple places, and their function can change. An exception to this would be if you’re using loops and require a variable specifically for the current scope.
+- Keep all variables in a single variables file and use generic names.
+- Using **@import** creates global scope so avoid duplicating variable names, even between variables and maps.
+- Like classes, variables can be used in multiple places, and their function can change. An exception to this would be if you’re using loops and require a variable specifically for the current scope.
 
   .. literalinclude:: code/frontend_standards.txt
       :language: css
