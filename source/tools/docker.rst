@@ -14,10 +14,7 @@ development, QA, and production environments. As a result, IT can ship faster
 and run the same app, unchanged, on laptops, data center VMs, and any cloud.
 
 Solomon Hykes, Docker’s Founder & CTO, gives an overview of Docker in this
-short video:
-
-.. youtube:: https://www.youtube.com/watch?v=ZzQfxoMFH0U
-
+short video:  https://www.youtube.com/watch?v=ZzQfxoMFH0U
 
 How we use it
 -------------

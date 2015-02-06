@@ -1,13 +1,13 @@
-Deploy Standards
-================
+Versioning
+==========
 
 .. toctree::
    :maxdepth: 2
    :hidden:
 
-*****************************************
-Make your life easier with Git (or Stash)
-*****************************************
+******************************
+Make your life easier with Git
+******************************
 
 Git is a distributed revision control and source code management system with an emphasis on speed, data integrity and support for distributed, non-linear workflows.
 
@@ -53,3 +53,9 @@ Why?
 ****
 
 * It's all about team work, code backup and version control
+
+***********
+Methodology
+***********
+
+All our code must use the GitFlow Methodology <https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow>.

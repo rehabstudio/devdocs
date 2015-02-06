@@ -1,0 +1,5 @@
+/* Not this */
+div.foo { } 
+
+/* Only this */
+.foo { }

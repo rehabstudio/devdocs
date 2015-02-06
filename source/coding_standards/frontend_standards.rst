@@ -24,7 +24,7 @@ HTML
 - Don’t use values for Boolean attributes
 - Don’t use closing slashes on empty elements
 
-  .. literalinclude:: code/frontend_standards.txt
+  .. literalinclude:: code/html/attributes.txt
       :language: html
       :linenos:
       :lines: 1
@@ -33,85 +33,87 @@ HTML
 - Class names should be lowercase and hyphenated.
 - If adding a class just as a JS hook, use the js- prefix on the name.
 
-  .. literalinclude:: code/frontend_standards.txt
+  .. literalinclude:: code/html/class.txt
       :language: html
       :linenos:
-      :lines: 3
+      :lines: 1
 
 - Always use appropriate elements for the task at hand; for example, always use a button to submit a form, never another element that looks like a button but has behaviour added with script.
 
-  .. literalinclude:: code/frontend_standards.txt
+  .. literalinclude:: code/html/elements.txt
       :language: html
       :linenos:
-      :lines: 5-9
-- Order rules by property group, and break each rule onto a separate line.
-- Leave a single space between the colon and the first value.
-- Single-quote all string values, including inside the URL function.
-- Except where specifically required (e.g. a time value for transitions), do not use a unit with a zero value; 0px is the same as 0em, so simply use 0.
+      :lines: 1-5
 
-  .. literalinclude:: code/frontend_standards.txt
-      :language: css
-      :linenos:
-      :lines: 11-20
-
-- Don’t use **id** selectors to apply rules.
-- Use a new line for each selector.
-
-  .. literalinclude:: code/frontend_standards.txt
-      :language: css
-      :linenos:
-      :lines: 22-27
-
-- When using **class** names, don’t specify the element in the selector unless there is a specific reason for it (e.g. specificity)
-
-  .. literalinclude:: code/frontend_standards.txt
-      :language: css
-      :linenos:
-      :lines: 29-33
-
-- Avoid **!important** wherever humanly possible.
-- Don’t use long selector chains; if you’re going past two selectors, consider using a new class instead.
-
-  .. literalinclude:: code/frontend_standards.txt
-      :language: css
-      :linenos:
-      :lines: 35-39
-
-- When listing vendor prefixes, always have the unprefixed property name last.
-
-  .. literalinclude:: code/frontend_standards.txt
-      :language: css
-      :linenos:
-      :lines: 41-42
 
 ****
 Sass
 ****
 
+- Order rules by property group, and break each rule onto a separate line.
+- Leave a single space between the colon and the first value.
+- Single-quote all string values, including inside the URL function.
+- Except where specifically required (e.g. a time value for transitions), do not use a unit with a zero value; 0px is the same as 0em, so simply use 0.
+
+  .. literalinclude:: code/sass/rules.txt
+      :language: css
+      :linenos:
+      :lines: 1-10
+
+- Don’t use **id** selectors to apply rules.
+- Use a new line for each selector.
+
+  .. literalinclude:: code/sass/noid.txt
+      :language: css
+      :linenos:
+      :lines: 1-6
+
+- When using **class** names, don’t specify the element in the selector unless there is a specific reason for it (e.g. specificity)
+
+  .. literalinclude:: code/sass/noelement.txt
+      :language: css
+      :linenos:
+      :lines: 1-5
+
+- Avoid **!important** wherever humanly possible.
+- Don’t use long selector chains; if you’re going past two selectors, consider using a new class instead.
+
+  .. literalinclude:: code/sass/chains.txt
+      :language: css
+      :linenos:
+      :lines: 1-5
+
+- When listing vendor prefixes, always have the unprefixed property name last.
+
+  .. literalinclude:: code/sass/prefix.txt
+      :language: css
+      :linenos:
+      :lines: 1-2
+
 - Keep all variables in a single variables file and use generic names.
 - Using **@import** creates global scope so avoid duplicating variable names, even between variables and maps.
 - Like classes, variables can be used in multiple places, and their function can change. An exception to this would be if you’re using loops and require a variable specifically for the current scope.
 
-  .. literalinclude:: code/frontend_standards.txt
+  .. literalinclude:: code/sass/variables.txt
       :language: css
       :linenos:
-      :lines: 44-48
+      :lines: 1-5
 
 - Do not nest more than three levels deep. While nesting is powerful, it can have a negative impact on readability and, therefore, maintainability.
 - When available (in release 3.3), use source maps for easier debugging (http://devtoolsecrets.com/secret/editing-use-sass-source-maps.html).
 - If not using Compass or an autoprefixer, make a Mixin for any CSS property which requires vendor prefixes.
 
-  .. literalinclude:: code/frontend_standards.txt
+  .. literalinclude:: code/sass/nesting.txt
       :language: css
       :linenos:
-      :lines: 50-53
+      :lines: 1-4
 
 - Consider placeholder selectors for repetitive code instead of extending other typed classes. Placeholder selectors will not be written to the stylesheet.
 
-  .. literalinclude:: code/frontend_standards.txt
+  .. literalinclude:: code/sass/placeholder.txt
       :language: css
       :linenos:
-      :lines: 55-62
+      :lines: 1-8
 
 
 **********
@@ -124,24 +126,24 @@ JavaScript
 - Use an underscore prefix to name private variables.
 - Variables with a Boolean value should be prefixed with is.
 
-  .. literalinclude:: code/frontend_standards.txt
+  .. literalinclude:: code/js/is.txt
       :language: js
       :linenos:
-      :lines: 64-66
+      :lines: 1-3
 
 - Use line breaks to show the contents of a function or conditional statement.
 
-  .. literalinclude:: code/frontend_standards.txt
+  .. literalinclude:: code/js/linebreaks.txt
       :language: js
       :linenos:
-      :lines: 68-74
+      :lines: 1-7
 
 Do not perform calculations or access the DOM when defining loops.
 
-  .. literalinclude:: code/frontend_standards.txt
+  .. literalinclude:: code/js/domloops.txt
       :language: js
       :linenos:
-      :lines: 76-87
+      :lines: 1-12
 
 - Lint your code automatically if your text editor allows, or manually if not. Use JSHint rules (http://jshint.com/).
 
@@ -150,16 +152,16 @@ Comments
 ********
 
 - Comment everything, all the time; all code should be minified before going into production, so trying to save space at this point is a false economy.
-- Code should follow phpDocumentor (http://bit.ly/3FPH7g) standards.
+- Frontend code comments should follow phpDocumentor (http://bit.ly/3FPH7g) standards.
 - For CSS, comment uncommon practices or decisions.
 - Comment class methods and loose functionality, along with any other complex logic that may benefit from them.
 - Document the parameters and return types of your methods and write an accurate description of the purpose of the method.
 - If the method is complex and has multiple use syntaxes, document them as examples in the comment block.
 
-  .. literalinclude:: code/frontend_standards.txt
+  .. literalinclude:: code/comments/below.txt
       :language: js
       :linenos:
-      :lines: 89-110
+      :lines: 1-22
 
 ***************
 Further reading

@@ -1,0 +1,10 @@
+div {
+/* Position */
+    z-index: 100px;
+/* Box Model */
+    margin: 0;
+/* Appearance */
+    background-image: url('foo.png');
+/* Behaviour */
+    animation: foo 1s;
+}

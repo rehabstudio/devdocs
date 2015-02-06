@@ -1,0 +1,22 @@
+// Ensures value can't go below zero or beyond the maximum possible value.
+var newX = Math.min(maxDrag, Math.max(0, newX));
+/**
+ * Filters the data source to create a subset matching the chosen date.
+ *
+ * @param string requestDate - Following YYYY-MM-DD syntax.
+ * @return array.
+ */
+filterByDate: function(requestDate, implementOffset) {
+}
+/**
+ * Returns a User record along with nested Goal records, recent
+ * activity and any notifications to be shown.
+ *
+ * Example Usage:
+ * APIWrapper.getUserDetails({ facebookToken: '123456' });
+ *
+ * @param object requestData - Contain either Facebook or Instagram tokens.
+ * @return object - jQuery promise (resolved) with User record.
+ */
+getUserDetails: function(requestData) {
+}

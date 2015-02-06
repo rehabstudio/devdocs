@@ -1,0 +1,3 @@
+var _foo = 'Hello World',
+    _barBaz = 1234,
+    isBoolean = true;

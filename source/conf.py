@@ -57,7 +57,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'devdocs'
-copyright = u'2014, rehabstudio'
+copyright = u'2015, rehabstudio'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -277,7 +277,7 @@ texinfo_documents = [
 epub_title = u'devdocs'
 epub_author = u'rehabstudio'
 epub_publisher = u'rehabstudio'
-epub_copyright = u'2014, rehabstudio'
+epub_copyright = u'2015, rehabstudio'
 
 # The basename for the epub file. It defaults to the project name.
 #epub_basename = u'devdocs'

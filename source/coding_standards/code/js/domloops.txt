@@ -1,0 +1,12 @@
+// Not this
+for (var i=0; i < (foo * 5); i++) {alert(i);}
+
+// Only this
+var fooTotal = foo * 5;
+for (var i=0; i < fooTotal; i++) { alert(i); }
+
+// Not this
+for (var i=0; i < $('.foo').length); i++) {alert(i);}
+
+// Only this
+for (var i=0,fooLen = $('.foo').length; i < fooLen; i++) { alert(i); }

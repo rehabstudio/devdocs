@@ -1,0 +1,4 @@
+@mixin transform($args…) {
+    -webkit-transform: $args;
+    transform: $args;
+}

@@ -23,6 +23,7 @@ I18NSPHINXOPTS  = $(PAPEROPT_$(PAPER)) $(SPHINXOPTS) source
 
 help:
 	@echo "Please use \`make <target>' where <target> is one of"
+	@echo "  install    to install dependencies"
 	@echo "  html       to make standalone HTML files"
 	@echo "  pdf        to make PDF files (stored in build/latax directory) - you may need sudo apt-get install texlive-full"
 	@echo "  dirhtml    to make HTML files named index.html in directories"
@@ -46,6 +47,10 @@ help:
 	@echo "  pseudoxml  to make pseudoxml-XML files for display purposes"
 	@echo "  linkcheck  to check all external links for integrity"
 	@echo "  doctest    to run all doctests embedded in the documentation (if enabled)"
+
+install:
+	@echo "You may need to run this as sudo. If that continues to fail, ensure you have run apt-get install python-pip"
+	pip install -r requirements.txt
 
 clean:
 	rm -rf $(BUILDDIR)/*

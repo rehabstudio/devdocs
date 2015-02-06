@@ -1,0 +1,5 @@
+//Never this
+<a onclick="submit()" class="button">Submit</a> 
+
+//Only this
+<button type="submit">Submit</button>

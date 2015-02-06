@@ -1,0 +1,6 @@
+/* Not this */
+#foo, .bar { }
+
+/* Only this */
+.foo,
+.bar { }

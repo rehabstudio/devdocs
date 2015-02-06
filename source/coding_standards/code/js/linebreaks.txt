@@ -1,0 +1,7 @@
+// Not this
+if(this){that;}
+
+// Only this
+if (this) {
+    that;
+}

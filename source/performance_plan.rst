@@ -65,14 +65,14 @@ Front-end
 QA
 **
 
-- Use Page Speed Insights (or similar) and developer tools to flag slow page load problems\ :sup:`1`\ 
-- Visually inspection for-over optimisation of SVG  
-- Run selenium grid across main 4 desktop browsers\ :sup:`2`\ 
-- Automated testing across supported devices, including bandwidth throttling\ :sup:`3`\ 
+- Use Page Speed Insights (or similar) and developer tools to flag slow page load problems\ :sup:`1`\
+- Visually inspection for-over optimisation of SVG
+- Run selenium grid across main 4 desktop browsers\ :sup:`2`\
+- Automated testing across supported devices, including bandwidth throttling\ :sup:`3`\
 - Enforce performance budget
 - Ensure no double redirects (particularly where specific mobile content is present)
 - Measure performance of external asset servers
-- Check that relevant assets are benefiting from server side compression\ :sup:`4`\ 
+- Check that relevant assets are benefiting from server side compression\ :sup:`4`\
 
 
 *****
