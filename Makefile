@@ -49,7 +49,6 @@ help:
 	@echo "  doctest    to run all doctests embedded in the documentation (if enabled)"
 
 install:
-	@echo "You may need to run this as sudo. If that continues to fail, ensure you have run apt-get install python-pip"
 	pip install -r requirements.txt
 
 clean:
