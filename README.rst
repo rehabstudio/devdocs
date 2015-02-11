@@ -10,6 +10,16 @@ standards for our entire stack.
 These docs are hosted on Read The Docs at: http://devdocs.rehabstudio.com
 
 
+Prerequisites
+-------------
+
+In order to build and use this documentation locally you'll need a standard Python 2.7 environment set up with `virtualenv` (and ideally `virtualenvwrapper`) installed. Installing and using those tools is outside the scope of this guide, but you can find detailed guides for your platform at http://docs.python-guide.org.
+
+For ubuntu this is as simple as `sudo apt-get install python-dev virtualenvwrapper`, other platforms may differ.
+
+Simple instructions on the usage of virtualenvwrapper can be found at http://docs.python-guide.org/en/latest/dev/virtualenvs/#id3.
+
+
 Contributing
 ------------
 
@@ -26,7 +36,7 @@ development.
     $ git clone git@github.com:your_name_here/devdocs.git
     $ cd devdocs/
 
-3. Install your local copy into a virtualenv. Assuming you have virtualenvwrapper installed, this is how you set up your fork for local development::
+3. Install your local copy into a virtualenv. Assuming you have virtualenvwrapper installed, this is how you set up your fork for local development (Note that you should not need to use `sudo` at this point)::
 
     $ mkvirtualenv devdocs
     $ pip install -r requirements.txt
