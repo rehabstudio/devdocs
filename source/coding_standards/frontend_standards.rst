@@ -47,7 +47,7 @@ HTML
 
 
 ****
-Sass
+CSS
 ****
 
 - Order rules by property group, and break each rule onto a separate line.
@@ -90,6 +90,10 @@ Sass
       :linenos:
       :lines: 1-2
 
+****
+Sass
+****
+
 - Keep all variables in a single variables file and use generic names.
 - Using **@import** creates global scope so avoid duplicating variable names, even between variables and maps.
 - Like classes, variables can be used in multiple places, and their function can change. An exception to this would be if you’re using loops and require a variable specifically for the current scope.
@@ -100,7 +104,7 @@ Sass
       :lines: 1-5
 
 - Do not nest more than three levels deep. While nesting is powerful, it can have a negative impact on readability and, therefore, maintainability.
-- When available (in release 3.3), use source maps for easier debugging (http://devtoolsecrets.com/secret/editing-use-sass-source-maps.html).
+- Use source maps for easier debugging (http://devtoolsecrets.com/secret/editing-use-sass-source-maps.html).
 - If not using Compass or an autoprefixer, make a Mixin for any CSS property which requires vendor prefixes.
 
   .. literalinclude:: code/sass/nesting.txt
