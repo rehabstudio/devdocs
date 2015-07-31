@@ -124,7 +124,8 @@ Sass
 JavaScript
 **********
 
-- Comma-separate blocks of variables rather than repeat var.
+- Always use **var** to declare variables.
+- Each variable on its own line.
 - Outer-encase all strings in single-quotes.
 - Defined names should be camelCased.
 - Use an underscore prefix to name private variables.
