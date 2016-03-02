@@ -12,6 +12,7 @@ rehabstudio Developers' Documentation
    versioning
    peer_reviews
    performance_plan
+   security
 
 About
 =====
