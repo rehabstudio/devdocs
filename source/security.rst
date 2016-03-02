@@ -51,6 +51,9 @@ considerations are as follows:
 - Have all frameworks, third party libraries and APIs been approved?
     - Licensing
     - Maintenance & support
+    - Ensure the latest stable versions are used
+    - Where applicable, state specific versions when using package management 
+      to avoid any issues caused by automatic package updates
 
 ***********************
 Security Scanning Tools
