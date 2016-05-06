@@ -39,8 +39,8 @@ Dockerfile
 .. code-block:: bash
 
         RUN apt-get install -y curl \
-	wget \
-	perl
+	        wget \
+	        perl
 
 * CMD should be in the format :code:`CMD [“exec”, “param1”, “param2”]`, not :code:`CMD exec param1 param2`
 * ENTRYPOINT don’t use this unless you have a specific need to
@@ -49,6 +49,14 @@ Dockerfile
 * ONBUILD shouldn’t be used unless there’s a really good reason to do so
 * Use a .dockerignore when it makes sense - exclude what doesn’t need added to the container
 * Cleanup after yourself. Once you have installed whatever packages you desire, RUN a clean up, e.g. `rm -rf /var/lib/apt/lists/*` (This can be appended at the end of a multi-line apt-get install, making the install and cleanup a single RUN)
+
+********
+Security
+********
+
+It is important to remember that a docker container can be inspected and as such shouldn't contain any sensitive data, such as secrets. Where necessary, use a `.dockerignore` file to exclude sensitive (or useless...) files from the container, such as `.env` files.
+
+If you need to make use of keys in your container, it's a good idea to do so at run time and mount said keys as a volume.
 
 ******
 Repo
