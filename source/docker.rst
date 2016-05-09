@@ -50,6 +50,14 @@ Dockerfile
 * Use a .dockerignore when it makes sense - exclude what doesn’t need added to the container
 * Cleanup after yourself. Once you have installed whatever packages you desire, RUN a clean up, e.g. `rm -rf /var/lib/apt/lists/*` (This can be appended at the end of a multi-line apt-get install, making the install and cleanup a single RUN)
 
+****************
+Mounting Volumes
+****************
+
+For those using VirtualBox (likely most of the OSX folks) remember that you can not specify local folders outside of `/Users/...` to mount. This means that if you're trying to :code:`docker run -v /var/host/www:/var/container/www ...` you will likely have some weird results. You can either specify directories that live inside your `/Users/` directory, or you can open the VirtualBox UI and add whatever folders you require as a shared folder.
+
+Basically, it's best if you just keep everything in `/Users/...` for now.
+
 ********
 Security
 ********
