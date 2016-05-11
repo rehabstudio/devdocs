@@ -52,7 +52,7 @@ Linting / Styling
 Coding Standards
 ----------------
 
-Projects being built through Goro need to adhere to Googles linting rules. There
+Projects being built through Goro need to adhere to Google's linting rules. There
 are various different style guides and standards across different languages.
 Check out the linting section of the learning resources for more specifics.
 
