@@ -56,11 +56,12 @@ Projects being built through Goro need to adhere to Google's linting rules. Ther
 are various different style guides and standards across different languages.
 Check out the linting section of the learning resources for more specifics.
 
-To lint JavaScript files (which won't catch AngularJS style errors) you can use
-the "Linter Tool" which editing a file on Goro. It is located next to the
-"Actions" and "Preview" buttons. There is also a command-line linter known as
-**gjslint** that can be run with corresponding rulesets. This local linting will
-speed up development overall as you'll not have to deploy files to lint them.
+To lint JavaScript files you can use the "Linter Tool" while editing a file on
+Goro. Note that this will not catch AngularJS formatting rules, only plain
+JavaScript rules. The tool is located next to the "Actions" and "Preview"
+buttons. There is also a command-line linter known as **gjslint** that can be
+run with corresponding rulesets. This local linting will speed up development
+overall as you'll not have to deploy files to lint them.
 
 Workflow
 --------
@@ -71,8 +72,9 @@ application, however this has many disadvantages:
 - You need an active internet connection to be able to develop.
 - To ensure your JS files lint you'd need to open each one manually and check.
 - Goro doesn't have real file source control and has a limited history stack.
-- The project will have access to only one "branch" and preview area. If there's
-  multiple developers on the project you'll quickly tread on each others toes.
+- The project will have access to only one "branch" and preview area. If there
+  are multiple developers on the project you'll quickly tread on each other's
+  toes.
 
 To combat the majority of these errors we can use a local development server for
 Goro known as `Johnny Cage <https://webmaster.googlesource.com/johnny-cage>`_.
