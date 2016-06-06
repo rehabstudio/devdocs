@@ -3,7 +3,7 @@ HubSpot
 
 What is HubSpot?
 ----------------
-HubSpot is an "inbound marketing software platform" which offers features for internet marketing, such as emails, blogging and social media. This piece of software is mostly used by the marketing team.
+`HubSpot <http://www.hubspot.com/>`_ is an "inbound marketing software platform" which offers features for internet marketing, such as emails, blogging and social media. This piece of software is mostly used by the marketing team.
 
 This document will mostly cover tips on how to use the emailer tool/rehabstudio email template.
 
@@ -30,7 +30,7 @@ The Newsletter template is for sending articles or information, i.e a monthly ne
 - Article slots, which can be modified depending on the number of articles to include.
 
 
-The 2 in 1 template allows you to switch between the event or newsletter email layouts. Each layout includes a spotlight, monthly links and footer section. The spotlight and monthly links can be hidden if not needed.
+The 2 in 1 template allows you to switch between the Event or Newsletter email layouts. Each layout includes a spotlight, monthly links and footer section. The spotlight and monthly links can be hidden if not needed.
 
 **Name of template:**  ``rehabstudio_new_mailer.html``
 
@@ -49,37 +49,35 @@ To create a new email with HubSpot:
 The Editor
 ------------------
 
-This section allows you to edit the contents of the email template. Each of the contents are stored in modules. You can manipulate the modules by showing or hiding them.
+This section allows you to edit the contents of the email template. Each part of the content is stored in a module. You can manipulate the modules by showing or hiding them.
 
-The ``rehabstudio_new_mailer.html`` template has a number of custom modules, with options to either show or hide sections. This will depend on the type of email your building. The options can be found in the ‘Edit Modules’ panel and are highlighted in orange.
+The ``rehabstudio_new_mailer.html`` template has a number of custom modules, with options to either show or hide sections. This will depend on the type of email your building. The options can be found in the 'Edit Modules' panel and are highlighted in orange.
 
-**Important!** - you may have to refresh the page to see changes within the edit module panel and template.
+**Important!** - you may have to refresh the page to see changes within the 'Edit Modules' panel and template.
 
 Choose type of email
 ~~~~~~~~~~~~~~~~~~~~
+
 This option will determine if you are making either an Event or an Newsletter. Selecting one will change the layout of the email, opening more options for further editing.
 
-- Event
-    Display event layout.
-
-        `Hide venue content`
-            Hides the events time and location, if you just want to show the event content.
-        `Hide invite content`
-            Hides the invite content, if you just want to display the events venue details (time and date).
-
-- Newsletter
-    Display newsletter layout.
-
-        `Choose the amount of slots`
-            This option will allow you to pick how many article slots you want on the newsletter template.
-
-            **Important!** Refresh the page after applying the number of slots to see added blocks.
+- Event (Display Event layout)
+        - `Hide venue content`
+            - Hides the events time and location, if you just want to show the event content.
+    
+        - `Hide invite content`
+            -  Hides the invite content, if you just want to display the events venue details (time and date).
+            
+- Newsletter (Display Newsletter layout)
+    - `Choose the amount of slots`
+        - This option will allow you to pick how many article slots you want on the newsletter template.
+        
+    **Important!** Refresh the page after applying the number of slots to see added blocks.
 
 - Other options
-    Display the staff spotlight
-        Show or hide the staff spotlight section.
-    Display the monthly links
-        Show or hide the monthly links section.
+    - Display the staff spotlight
+        - Show or hide the staff spotlight section.
+    - Display the monthly links
+        - Show or hide the monthly links section.
         
 Editing the content
 -------------------
@@ -110,24 +108,24 @@ The arrow images located in the newsletter layout works differently from other i
 Footer
 ~~~~~~
 
-To edit the address section of the footer, from navigation bar you:
+To edit the address section of the footer, from the navigation bar you:
 
 - Select 'Content', click 'Content settings'.
 - Select 'Email' on the left panel (5th from top).
 - Then input the correct details under ‘Email Footer Information’.
 - Save changes.
 
-**Important!** Always check the correct address is being used on the email before sending. This setting will change the address on all emails using the ``rehabstudio_new_mailer.html`` template. If incorrect simply follow the steps above and save.
+**Important!** Always check the correct address is being used on the email before sending. This setting will change the address on all emails using the ``rehabstudio_new_mailer.html`` template. If incorrect, simply follow the steps above and save.
 
-Additional information.
------------------------
+Additional information
+----------------------
 
 Mailto link
 ~~~~~~~~~~~
 
 The mailto link opens the default mail program with the TO field already filled out. This link can be added to text or the arrow images. To add a mailto link, you simply write ‘mailto:someone@yoursite.com’ (replacing someone@yoursite.com with the desired email) into the add link section.
 
-**Important!** Adding the mailto link to other images other than the arrow images will not work. HubSpot adds a http:// protocol which opens a new tab on the browser. Instead of opening the default mail program.
+**Important!** Adding the mailto link to other images other than the arrow images will not work. HubSpot adds a http:// protocol which opens a new tab on the browser, instead of opening the default mail program.
 
 
 
