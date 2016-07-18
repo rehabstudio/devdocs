@@ -52,9 +52,10 @@ Linting / Styling
 Coding Standards
 ----------------
 
-Projects being built through Goro need to adhere to Google's linting rules. There
-are various different style guides and standards across different languages.
-Check out the linting section of the learning resources for more specifics.
+Projects being built through Goro need to adhere to Google's linting rules.
+There are various different style guides and standards across different
+languages. Check out the linting section of the learning resources for more
+specifics.
 
 To lint JavaScript files you can use the "Linter Tool" while editing a file on
 Goro. Note that this will not catch AngularJS formatting rules, only plain
@@ -96,6 +97,10 @@ folders through the Goro web application.
 There is an additional "tip" in the documentation which shows you how to alias
 `goro`, however, their method listed will only work for your current terminal
 session if you're on anything other than a mac.
+
+NOTE: If you are installing the CLI tool, it only works with versions of keyring
+lower than or equal to `8.4.0`. At this time you'll need to update the relevant
+line in the `requirements.txt` of the CLI vendor download.
 
 If you try to run `goro` from any folder and it fails then you will need to
 create your own command. Below is an example `goro` command that can be placed
